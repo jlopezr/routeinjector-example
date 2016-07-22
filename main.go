@@ -5,11 +5,10 @@ import (
 	"log"
 	"net/http"
 	"time"
-	"user/routeinjector"
 
-	"gopkg.in/mgo.v2/bson"
-
+	"github.com/jlopezr/routeinjector"
 	"github.com/julienschmidt/httprouter"
+	"gopkg.in/mgo.v2/bson"
 )
 
 func index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
